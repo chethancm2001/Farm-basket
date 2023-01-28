@@ -20,6 +20,7 @@ const itemSchema = new mongoose.Schema({
     },
     uploadedBy : {
         type : mongoose.SchemaTypes.ObjectId,
+        ref :'Farmer',
         required : true
     },
     isAvailable : {
@@ -28,4 +29,4 @@ const itemSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('item',itemSchema)
+module.exports = mongoose.model('Item',itemSchema)
