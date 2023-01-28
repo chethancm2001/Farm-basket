@@ -7,6 +7,7 @@ const orderSchema = new mongoose.Schema({
     },
     itemId : {
         type : mongoose.SchemaTypes.ObjectId,
+        ref:'Item',
         required : true
     },
     orderedOn : {
