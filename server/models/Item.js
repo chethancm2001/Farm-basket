@@ -20,7 +20,7 @@ const itemSchema = new mongoose.Schema({
     },
     uploadedBy : {
         type : mongoose.SchemaTypes.ObjectId,
-        ref :'Farmer',
+        ref :'farmer',
         required : true
     },
     isAvailable : {
