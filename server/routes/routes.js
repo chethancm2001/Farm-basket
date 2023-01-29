@@ -11,6 +11,7 @@ const checkConsumer = require('../middleware/checkConsumer')
 const farmerLogin = require('../controllers/farmerLogin')
 const deleteItem = require('../controllers/deleteItem')
 
+
 routes.get('/',(req,res)=>{
     res.send("this is from routes")
 })
@@ -25,6 +26,7 @@ routes.post('/login-farmer',farmerLogin)
 routes.post('/add-item',auth,checkFarmer,itemAdder)
 
 routes.get('/get-items',getItems)
+
 
 
 module.exports = routes
